@@ -1,0 +1,252 @@
+body {
+  font-family: Roboto-Regular, "Helvetica Neue", Helvetica, Tahoma, Arial,
+    Sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* First Div */
+.container-one {
+  font-size: 12px;
+  background-color: #f85606;
+  padding-left: 9.5%;
+  padding-top: 0.2%;
+}
+
+.container-one a {
+  color: white;
+  padding-left: 1.5%;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Navbar */
+
+.navbar-nav .nav-item .nav-link {
+  color: white;
+  font-size: 12.5px;
+  display: flex;
+  align-items: center;
+}
+.navbar-nav .nav-item .nav-link img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.navbar {
+  background-color: #f85606;
+}
+
+.daraz-img {
+  width: 120px;
+  margin-left: 10.9%;
+}
+
+.form-div {
+  width: 48%;
+  padding-top: 0.5%;
+  margin-left: 1.2%;
+}
+
+.search-bar {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.nav-search-icon {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 50px;
+  position: absolute;
+  display: flex;
+  height: 30px;
+  margin-left: 90%;
+  background-color: #ffe1d2;
+  padding-top: 7px;
+}
+.form-control {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.form-control::placeholder {
+  font-size: 14px;
+  color: #595c5f;
+}
+
+.nav-link1,
+.nav-link2,
+.nav-link3,
+.nav-link4 {
+  width: 70px;
+}
+.nav-link1 {
+  padding-top: 15%;
+}
+.nav-link2 {
+  padding-top: 17%;
+  margin-left: 15%;
+}
+/* Dropdown Container */
+.dropdowns-container {
+  background-color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 2px;
+  width: 60%;
+  height: 85%;
+  margin-left: 45%;
+  margin-bottom: 20%;
+}
+
+.btn1 {
+  width: 100%;
+  margin-bottom: -2%;
+  text-align: start;
+  font-size: 13px;
+  color: gray;
+}
+
+.dropdown-item {
+  font-size: 13px;
+}
+.photo {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.rounded-indicator {
+  border: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+/* Links */
+.links {
+  height: 50px;
+}
+
+.link-container {
+  display: flex;
+  justify-content: center;
+}
+
+.link-btn,
+.link-btn6 {
+  border-right: 1px solid gray;
+  background-color: #ffe8de;
+}
+.link-btn6 {
+  border: none;
+}
+
+/* Mid-Picture */
+
+/* Categories */
+/* .card {
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+} */
+
+/* Load Button */
+.load-div {
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.load-btn {
+  font-size: 14px;
+  border: #f85606 1px solid;
+  width: 30%;
+  color: #f85656;
+  font-weight: bold;
+}
+
+/* Daraz Basic Info  */
+.basic-info1 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 11%;
+  margin-top: 3%;
+}
+
+.basic-info2 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 6%;
+  margin-top: 3%;
+}
+
+.basic-info1 a,
+.basic-info2 a {
+  color: black;
+  text-decoration: none;
+  width: 100%;
+  font-size: 12px;
+}
+
+.basic-info3-link {
+  background-image: url("https://img.alicdn.com/imgextra/i2/O1CN01PPEuYH1lWMHGOUbok_!!6000000004826-2-tps-1947-1053.png");
+  width: 100%;
+}
+.link-pk {
+  background-position: -180px -96px;
+  zoom: 0.332;
+}
+/* Detailed Info */
+.detailed-info1 {
+  padding-left: 11%;
+}
+
+.detailed-info2 {
+  padding-left: 6%;
+}
+.detailed-info1 p,
+.detailed-info2 p {
+  font-size: 10px;
+  color: #92a4b1;
+}
+
+.detailed-info1 h1,
+.detailed-info2 h1,
+.detailed-info3 h1 {
+  font-size: 18px;
+  color: #606060;
+}
+
+.detailed-info3 {
+  padding-right: 2%;
+  padding-left: 1%;
+}
+
+.detailed-info3 a,
+.detailed-info4 a {
+  text-decoration: none;
+  color: #888;
+  font-size: 12px;
+  color: #92a4b1;
+}
+
+.detailed-info4 {
+  padding-left: 1%;
+  padding-right: 8%;
+}
+
+@media (max-width: 992px) {
+  .navbar-nav {
+    display: none; /* Hide the navbar items by default */
+    flex-direction: column;
+  }
+
+  .navbar-nav.show {
+    display: flex; /* Show the navbar items when the button is clicked */
+  }
+}
