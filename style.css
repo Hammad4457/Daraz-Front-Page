@@ -41,9 +41,8 @@ body {
 }
 
 .form-div {
-  width: 48%;
-  padding-top: 0.5%;
-  margin-left: 1.2%;
+  width: 49%;
+  margin-left: 0.5%;
 }
 
 .search-bar {
@@ -98,7 +97,7 @@ body {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   box-shadow: 2px;
-  width: 60%;
+  width: 65%;
   height: 85%;
   margin-left: 45%;
   margin-bottom: 20%;
@@ -115,6 +114,12 @@ body {
 .dropdown-item {
   font-size: 13px;
 }
+
+.slider1 {
+  width: 100%;
+  padding-left: 2%;
+  padding-right: 14%;
+}
 .photo {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -127,6 +132,12 @@ body {
   height: 15px;
   border-radius: 50%;
 }
+/* Flash Photo */
+.flash-photo-container {
+  max-width: 100%;
+  width: 70%;
+}
+
 /* Links */
 .links {
   height: 50px;
@@ -164,8 +175,10 @@ body {
 }
 .load-btn {
   font-size: 14px;
+  padding-top: 0.7%;
+  padding-bottom: 0.7%;
   border: #f85606 1px solid;
-  width: 30%;
+  width: 25%;
   color: #f85656;
   font-weight: bold;
 }
@@ -184,6 +197,19 @@ body {
   padding-left: 6%;
   margin-top: 3%;
 }
+.basic-info3 {
+  padding-left: 3%;
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+}
+
+.basic-info4 {
+  padding-left: 3%;
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+}
 
 .basic-info1 a,
 .basic-info2 a {
@@ -191,6 +217,11 @@ body {
   text-decoration: none;
   width: 100%;
   font-size: 12px;
+}
+
+.basic-info3 a,
+.basic-info4 a {
+  color: #888888;
 }
 
 .basic-info3-link {
@@ -201,6 +232,108 @@ body {
   background-position: -180px -96px;
   zoom: 0.332;
 }
+.link-bg {
+  background-position: -513px -96px;
+  zoom: 0.332;
+}
+.link-sl {
+  background-position: -402px -96px;
+  zoom: 0.332;
+}
+.link-my {
+  background-position: -291px -96px;
+  zoom: 0.332;
+}
+.link-np {
+  background-position: -69px -96px;
+  zoom: 0.332;
+}
+.link-pm-1 {
+  background-position: -98px -682px;
+  zoom: 0.338;
+}
+.link-pm-2 {
+  background-position: -267px -682px;
+  zoom: 0.338;
+}
+.link-pm-3 {
+  background-position: -436px -682px;
+  zoom: 0.338;
+}
+.link-pm-4 {
+  background-position: -606px -682px;
+  zoom: 0.338;
+}
+.link-pm-5 {
+  background-position: -94px -805px;
+  zoom: 0.338;
+}
+.link-pm-6 {
+  background-position: -774px -682px;
+  zoom: 0.338;
+}
+.link-pm-7 {
+  background-position: -940px -682px;
+  zoom: 0.338;
+}
+.link-pm-8 {
+  background-position: -1470px -805px;
+  zoom: 0.338;
+}
+.link-pm-9 {
+  background-position: -268px -805px;
+  zoom: 0.338;
+}
+.link-pm-10 {
+  background-position: -1379px -422px;
+  zoom: 0.33;
+}
+
+.link-deal-2 {
+  background-position: -401px -255px;
+  border-radius: 5px;
+  zoom: 0.331;
+}
+.link-deal-3 {
+  background-position: -401px -361px;
+  zoom: 0.331;
+  border-radius: 5px;
+}
+.link-deal-4 {
+  background-position: -400px -458px;
+  border-radius: 5px;
+  zoom: 0.328;
+}
+.link-deal-5 {
+  width: 100%;
+  height: 100%;
+  background-position: -755px -435px;
+  zoom: 0.339;
+}
+.link-deal-6 {
+  background-position: -902px -446px;
+}
+.link-logo-1 {
+  zoom: 0.39;
+  background-position: -630px -102px;
+}
+.link-logo-2 {
+  zoom: 0.39;
+  background-position: -740px -102px;
+}
+.link-logo-3 {
+  zoom: 0.37;
+  background-position: -847px -101px;
+}
+.link-logo-4 {
+  zoom: 0.37;
+  background-position: -957px -101px;
+}
+.link-logo-5 {
+  zoom: 0.35;
+  background-position: -1063px -95px;
+}
+
 /* Detailed Info */
 .detailed-info1 {
   padding-left: 11%;
@@ -211,6 +344,7 @@ body {
 }
 .detailed-info1 p,
 .detailed-info2 p {
+  margin-top: 9%;
   font-size: 10px;
   color: #92a4b1;
 }
@@ -220,6 +354,7 @@ body {
 .detailed-info3 h1 {
   font-size: 18px;
   color: #606060;
+  margin-top: 8%;
 }
 
 .detailed-info3 {
@@ -248,5 +383,37 @@ body {
 
   .navbar-nav.show {
     display: flex; /* Show the navbar items when the button is clicked */
+  }
+
+  .dropdowns-container {
+    margin-left: 30%;
+    height: 75%;
+    width: 35%;
+  }
+  .slider1 {
+    margin-left: 10%;
+  }
+
+  .basic-info2,
+  .basic-info3,
+  .basic-info4 {
+    padding-left: 10%;
+  }
+
+  .detailed-info2,
+  .detailed-info3,
+  .detailed-info4 {
+    padding-left: 10%;
+  }
+}
+
+@media (max-width: 760px) {
+  .dropdowns-container {
+    margin-left: 25%;
+    height: 85%;
+    width: 50%;
+  }
+  .slider1 {
+    margin-left: 8%;
   }
 }
