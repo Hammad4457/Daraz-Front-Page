@@ -1,119 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping in Pakistan: Fashion, Electronics & Groceries - daraz.pk</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="style.css" />
-    <title>Daraz.pk</title>
-  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <body>
-    <header>
-      <div class="container-fluid container-one">
-        <a href="#">Become a Seller</a>
-        <a href="#">Daraz Affiliate Program</a>
-        <a href="#">Help & Support</a>
-        <a href="#">Daraz Logistics Power</a>
-      </div>
-      <nav class="navbar navbar-expand-lg">
-        <div
-          class="d-flex justify-content-between align-items-center"
-          style="width: 100%"
-        >
-          <div class="navbar-brand daraz-img">
-            <img
-              style="width: 100%; height: auto"
-              src="Assets/Daraz Image.png"
-              alt="Daraz"
-            />
-          </div>
-          <div class="form-div">
-            <form class="search-bar" action="">
-              <input
-                class="form-control"
-                type="text"
-                placeholder="Search in Daraz"
-                id="search-bar-field"
-              />
-              <div class="nav-search-icon">
-                <i
-                  style="color: red; padding-left: 35%"
-                  class="fa fa-search"
-                  aria-hidden="true"
-                ></i>
-              </div>
-            </form>
-          </div>
-          <button
-            class="navbar-toggler d-lg-none rounded"
-            type="button"
-            onclick="toggleNavItems()"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div id="navbarNav" class="collapse navbar-collapse">
-            <div>
-              <ul class="navbar-nav" style="margin-left: 4%">
-                <li class="nav-item nav-item1">
-                  <a class="nav-link nav-link1" href="#">
-                    <img src="Assets/Login.png" alt="Login" /><strong
-                      >Login</strong
-                    >
-                  </a>
-                </li>
-                <li class="nav-item nav-item2" style="margin-left: 5%">
-                  <a class="nav-link nav-link2" href="#"
-                    ><strong>Sign Up</strong></a
-                  >
-                </li>
-                <li class="nav-item nav-item3" style="margin-left: 5%">
-                  <a class="nav-link nav-link3" href="#">
-                    <img
-                      style="width: 40%"
-                      src="Assets/Globe.png"
-                      alt="Language"
-                    />
-                    <strong>EN</strong>
-                  </a>
-                </li>
-                <li class="nav-item nav-item4" style="margin-left: 3%">
-                  <a class="nav-link nav-link4" href="#">
-                    <img style="width: 55%" src="Assets/tokri.svg" alt="Cart" />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+
+
+    <link rel="shortcut icon"
+        href="https://cdn.freelogovectors.net/wp-content/uploads/2023/10/daraz_logo-freelogovectors.net_-180x135.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<header>
+    <div class="container-fluid " style="background-color: #F85606; padding: 0;">
+        <div class="container upper-navbar">
+            <a href="#" type="button" style="margin: 0; margin-left: 5px;">Become a Seller</a>
+            <a href="#" type="button">Daraz Affiliate Program</a>
+            
+            <a href="#" id="helpSupportLink" title="" data-bs-toggle="popover" data-bs-trigger="manual"
+            style="padding-left: 2px; padding-right: 2px;">Help &
+            Support</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#helpSupportLink').popover({
+                    html: true,
+                    content: '<div class="popover-content">' +
+                        '<a href="#" class="help"><i class="far fa-question-circle"></i> <p> Help Center</p> </a>' +
+                        '<a href="#" class="chat"><i class="far fa-question-circle"></i><p> Chat with Us</p></a>' +
+                        '<a href="#" class="order"><i class="far fa-question-circle"></i><p> Order</p> </a>' +
+                        '<a href="#" class="order"><i class="far fa-question-circle"></i><p> Shipping & Delivery </p></a>' +
+                        '<a href="#" class="order"><i class="far fa-question-circle"></i><p> Payments</p></a>' +
+                        '<a href="#" class="order"><i class="far fa-question-circle"></i></i> <p>Returns & Refund</p></a > ' +
+                        '<a href="#" class="order"><i class="far fa-question-circle"></i><p> Purchase Protection</p></a>' +
+                        '</div>'
+                }).on('mouseenter', function () {
+                    var _this = this;
+                    $(this).popover('show');
+                    $('.popover').on('mouseleave', function () {
+                        $(_this).popover('hide');
+                    });
+                }).on('mouseleave', function () {
+                    var _this = this;
+                    setTimeout(function () {
+                        if (!$('.popover:hover').length) {
+                            $(_this).popover('hide');
+                        }
+                    }, 100);
+                });
+            });
+        </script>
+
+            <a href="#" type="button">Daraz Losgistics Partner</a>
         </div>
-      </nav>
-    </header>
 
-    <script>
-      function toggleNavItems() {
-        const navItems = document.querySelector(".navbar-nav");
-        navItems.classList.toggle("show");
-      }
-    </script>
+        <!-- Navbar -->
+
+        <nav class="navbar navbar-expand-md">
+            <div class="container main-navbar">
+                <a href="" class="navbar-brand">
+                    <img src="Assets\Daraz Image.png" alt="" style="height: 48px; margin: 0;">
+                </a>
+
+                <div class="dropdown categories-dropdown d-none">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="categoriesDropdown"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Categories
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="categoriesDropdown" style="top: 45px;">
+                      <li><a class="dropdown-item" href="#">Clothes</a></li>
+                      <li><a class="dropdown-item" href="#">Sports </a></li>
+                      <li><a class="dropdown-item" href="#">Furniture</a></li>
+                      <li><a class="dropdown-item" href="#">Kids</a></li>
+                      <li><a class="dropdown-item" href="#">Women</a></li>
+                      <!-- Add more categories as needed -->
+                  </ul>
+              </div>
+
+              <script>
+                  document.addEventListener('DOMContentLoaded', function () {
+                      const navbar = document.querySelector('.navbar');
+                      const categoriesDropdown = document.querySelector('.categories-dropdown');
+                      const viewportHeight = window.innerHeight;
+
+                      window.addEventListener('scroll', function () {
+                          if (window.scrollY > 0.6 * viewportHeight) {
+                              navbar.classList.add('scrolled');
+                              categoriesDropdown.classList.remove('d-none');
+                          } else {
+                              navbar.classList.remove('scrolled');
+                              categoriesDropdown.classList.add('d-none');
+                          }
+                      });
+                  });
+
+
+              </script>
+
+                <div class="search-bar">
+                    <form class="search" action="">
+                        <input type="text" class="form-control" placeholder="Search in Daraz">
+                        <div class="search-icon-container">
+                            <i class="fa-solid fa-magnifying-glass" style="color: #F85606;"></i>
+                        </div>
+                    </form>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible Navbar -->
+
+
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <hr style="margin: 0; margin-top: 10px;">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <button class="btn" style="padding: 5px;"><img
+                                    src="https://img.alicdn.com/imgextra/i4/O1CN01kwkROp1vjm0trG3sl_!!6000000006209-2-tps-72-72.png"
+                                    alt="">
+                                <p> Login</p>
+                            </button>
+                        </li>
+
+                        <li class="pad-lft-15x" id="bar" style="padding-top:10px; color: white;">|</li>
+
+                        <li class="nav-item">
+                            <button class="btn" style="padding: 5px;">
+                                <p>SignUp</p>
+                            </button>
+                        </li>
+
+
+                        <li class="nav-item dropdown lang-icon">
+                          <button class="btn dropdown-toggle" type="button" id="languageDropdown"
+                              data-bs-toggle="dropdown" aria-expanded="false" style="padding: 5px;">
+                              <img src="https://img.alicdn.com/imgextra/i2/O1CN01kCOXEJ24smLMboKkc_!!6000000007447-2-tps-72-72.png"
+                                  alt="" width="24" height="24">
+                              <p class="d-inline">EN</p>
+                          </button>
+                          <ul class="dropdown-menu language-menu" style="width: 185px; left: -60px; top: 45px;"
+                              aria-labelledby="languageDropdown">
+                              <p style="font-weight: 300;">Select Language</p>
+                              <li class="dropdown-item">
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="language" id="langEs"
+                                          value="ES">
+                                      <label class="form-check-label" for="langUr">
+                                          UR / Urdu
+                                      </label>
+                                  </div>
+                              </li>
+                              <li class="dropdown-item language-items">
+                                  <div class="form-check" style="color: #F85606;">
+                                      <input style="border-color: #F85606; background-color: #F85606;"
+                                          class="form-check-input" type="radio" name="language" id="langEn" value="EN"
+                                          checked>
+                                      <label class="form-check-label" for="langEn">
+                                          EN / English
+                                      </label>
+                                  </div>
+                              </li>
+
+
+                              <!-- Add more languages as needed -->
+                          </ul>
+                      </li>
+
+                        <li class="nav-item">
+                          
+                            <button class="btn" style="width: 60px;;height: 50px;">
+                              <div style="padding-bottom: 8%;padding-right:25px;">
+                                <img style="width: 100%;" src="Assets\tokri.svg" alt="">
+                              </div>
+                            </button>
+                          
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+  
+  <body>
+    
 
     <!-- Slider & DropDowns -->
-    <div class="container-fluid">
+    <div class="container-fluid slider-dropdown" >
       <div class="row" style="margin-top: 1.5%">
         <!-- Dropdowns -->
-        <div class="col-md-12 col-lg-3 ">
+        <div class="col-sm-12 col-lg-3 ">
           <div class="dropdowns-container">
             <!-- btn1 -->
-            <div class="dropend">
+            <div class="dropend d-flex">
+              <i style="color: #b0b0b0; padding-top: 4%;padding-left: 2%;" class="fas fa-shopping-basket"></i>
               <button
                 class="btn btn1 dropdown-toggle"
                 type="button"
@@ -123,6 +216,7 @@
               >
                 Groceries & Pets
               </button>
+              
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <li>
                   <a class="dropdown-item" href="#">Breakfast,Choco & Snack</a>
@@ -139,7 +233,8 @@
               </ul>
             </div>
             <!-- btn2 -->
-            <div class="dropend">
+            <div class="dropend d-flex">
+              <i style="color: #b0b0b0; padding-top: 4%;padding-left: 2%;" class="fas fa-shopping-basket"></i>
               <button
                 class="btn btn1 dropdown-toggle"
                 type="button"
@@ -167,7 +262,8 @@
               </ul>
             </div>
             <!-- btn3 -->
-            <div class="dropend">
+            <div class="dropend d-flex">
+              <i style="color: #b0b0b0; padding-top: 4%;padding-left: 2%;" class="fas fa-shopping-basket"></i>
               <button
                 class="btn btn1 dropdown-toggle"
                 type="button"
@@ -204,7 +300,8 @@
               </ul>
             </div>
             <!-- btn4 -->
-            <div class="dropend">
+            <div class="dropend d-flex">
+              <i style="color: #b0b0b0; padding-top: 4%;padding-left: 2%;" class="fas fa-shopping-basket"></i>
               <button
                 class="btn btn1 dropdown-toggle"
                 type="button"
@@ -230,7 +327,8 @@
               </ul>
             </div>
             <!-- btn5 -->
-            <div class="dropend">
+            <div class="dropend d-flex">
+              <i style="color: #b0b0b0; padding-top: 4%;padding-left: 2%;" class="fas fa-shopping-basket"></i>
               <button
                 class="btn btn1 dropdown-toggle"
                 type="button"
@@ -256,7 +354,8 @@
               </ul>
             </div>
             <!-- btn6 -->
-            <div class="dropend">
+            <div class="dropend d-flex">
+              <i style="color: #b0b0b0; padding-top: 4%;padding-left: 2%;" class="fas fa-shopping-basket"></i>
               <button
                 class="btn btn1 dropdown-toggle"
                 type="button"
@@ -282,7 +381,8 @@
               </ul>
             </div>
             <!-- btn7 -->
-            <div class="dropend">
+            <div class="dropend d-flex">
+              <i style="color: #b0b0b0; padding-top: 4%;padding-left: 2%;" class="fas fa-shopping-basket"></i>
               <button
                 class="btn btn1 dropdown-toggle"
                 type="button"
@@ -308,7 +408,8 @@
               </ul>
             </div>
             <!-- btn8 -->
-            <div class="dropend">
+            <div class="dropend d-flex">
+              <i style="color: #b0b0b0; padding-top: 4%;padding-left: 2%;" class="fas fa-shopping-basket"></i>
               <button
                 class="btn btn1 dropdown-toggle"
                 type="button"
@@ -334,7 +435,8 @@
               </ul>
             </div>
             <!-- btn9 -->
-            <div class="dropend">
+            <div class="dropend d-flex">
+              <i style="color: #b0b0b0; padding-top: 4%;padding-left: 2%;" class="fas fa-shopping-basket"></i>
               <button
                 class="btn btn1 dropdown-toggle"
                 type="button"
@@ -360,7 +462,8 @@
               </ul>
             </div>
             <!-- btn10 -->
-            <div class="dropend">
+            <div class="dropend d-flex">
+              <i style="color: #b0b0b0; padding-top: 4%;padding-left: 2%;" class="fas fa-shopping-basket"></i>
               <button
                 class="btn btn1 dropdown-toggle"
                 type="button"
@@ -386,7 +489,8 @@
               </ul>
             </div>
             <!-- btn11 -->
-            <div class="dropend">
+            <div class="dropend d-flex">
+              <i style="color: #b0b0b0; padding-top: 4%;padding-left: 2%;" class="fas fa-shopping-basket"></i>
               <button
                 class="btn btn1 dropdown-toggle"
                 type="button"
@@ -394,7 +498,7 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Watches,Bags & Jewellery
+                Watches & Jewellery
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <li>
@@ -412,7 +516,8 @@
               </ul>
             </div>
             <!-- btn12 -->
-            <div class="dropend">
+            <div class="dropend d-flex">
+              <i style="color: #b0b0b0; padding-top: 4%;padding-left: 2%;" class="fas fa-shopping-basket"></i>
               <button
                 class="btn btn1 dropdown-toggle"
                 type="button"
@@ -440,7 +545,7 @@
           </div>
         </div>
         <!-- Slider -->
-        <div class="col-md-12 col-lg-9">
+        <div class="col-sm-12 col-lg-9">
           <div
             id="demo"
             class="carousel slide slider1" data-bs-ride="carousel"
@@ -519,107 +624,93 @@
       </div>
     </div>
     <!-- Links -->
-    <div class="container-fluid links">
-      <div class="link-container">
-        <!-- Link1 -->
-        <button class="btn link-btn">
-          <a style="text-decoration: none" href="#">
-            <div style="display: flex; width: 150px">
-              <div>
-                <img src="Assets\Links.png" alt="" />
+    <div class="row" style=" margin: 0; margin-top: 1%; padding: 5px; ">
+
+      <div class="col-md-6 col-lg-4 button-block1" >
+        <div >
+          <div class="headlines-container"
+              style="margin-right: 0; ;border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+              <div class="headlines">
+                  <a href="#">
+                      <img src="https://icms-image.slatic.net/images/ims-web/55c642f0-250b-4515-9c8a-42cce3327098.png"
+                          alt="" style="max-height:100% ;">
+                      <p>Safe Payments</p>
+                  </a>
               </div>
 
-              <span style="padding-left: 6%; padding-top: 0.5%; color: black"
-                >Safe Payments</span
-              >
-            </div>
-          </a>
-        </button>
+              <span style="padding: 0;padding-right: 5%;" id="headlines-bar">|</span>
 
-        <!-- Link2 -->
-        <button class="btn link-btn">
-          <a style="text-decoration: none" href="#">
-            <div style="display: flex; width: 180px">
-              <div>
-                <img src="Assets\Links Car.png" alt="" />
+              <div class="headlines">
+                  <a href="#">
+                      <img src="//icms-image.slatic.net/images/ims-web/1b7e5ccb-89fc-4383-bc27-4586e82195be.png"
+                          alt="" style="max-height:100% ;">
+                      <p>Nationwide Delivery</p>
+                  </a>
+              </div>
+              
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" style="padding: 0;">
+          <div class="headlines-container" style="padding-left: 5%;padding-right: 5%;">
+
+            <span id="headlines-bar">|</span>
+
+              <div class="headlines" style="padding-left: 5%;">
+                  <a href="#">
+                      <img src="//icms-image.slatic.net/images/ims-web/f2a7f550-3a25-478d-9879-e6aa419c7ebf.png"
+                          alt="" style="max-height:100% ;">
+                      <p>Free & Easy Return</p>
+                  </a>
               </div>
 
-              <span style="padding-left: 6%; padding-top: 0.5%; color: black"
-                >Nationwide Delivery</span
-              >
-            </div>
-          </a>
-        </button>
+              <span id="headlines-bar">|</span>
 
-        <!-- Link3 -->
-        <button class="btn link-btn">
-          <a style="text-decoration: none" href="#">
-            <div style="display: flex; width: 190px">
-              <div>
-                <img src="Assets\Links Backarrow.png" alt="" />
+              <div class="headlines" style="padding-left: 5%;">
+                  <a href="#">
+                      <img src="//icms-image.slatic.net/images/ims-web/05352646-9b19-4283-a7b1-dcb16736663e.png"
+                          alt="" style="max-height:100% ;">
+                      <p>Best Price Guaranty</p>
+                  </a>
+              </div>
+              <span id="headlines-bar">|</span>
+          </div>
+      </div>
+
+
+      <div class="col-md-6 col-lg-4 " style="padding-right: 10%;">
+        <div >
+          <div class="headlines-container"
+              style="margin: 0; display: flex; justify-content: center; border-top-right-radius:10px; border-bottom-right-radius:10px;">
+
+              <div class="headlines" >
+                  <a href="#">
+                      <img src="//icms-image.slatic.net/images/ims-web/781b5194-65f0-4ae5-b7a6-003bc717054f.png"
+                          alt="" style="max-height:100% ;">
+                      <p>Authentic Products</p>
+                  </a>
               </div>
 
-              <span style="padding-left: 6%; color: black"
-                >Free & Easy Returns</span
-              >
-            </div>
-          </a>
-        </button>
+              <span  id="headlines-bar">|</span>
 
-        <!-- Link4 -->
-        <button class="btn link-btn">
-          <a style="text-decoration: none" href="#">
-            <div style="display: flex; width: 190px">
-              <div>
-                <img src="Assets\Link BestPrice.png" alt="" />
+              <div class="headlines" style="padding-left: 5%;">
+                  <a href="#">
+                      <img src="//icms-image.slatic.net/images/ims-web/8faa565d-b52d-4e05-90e4-38466e764e84.png"
+                          alt="" style="max-height:100% ;">
+                      <p>Daraz Verified</p>
+                  </a>
               </div>
-
-              <span style="padding-left: 6%; padding-top: 0.5%; color: black"
-                >Best Price Guaranted</span
-              >
-            </div>
-          </a>
-        </button>
-
-        <!-- Link5 -->
-        <button class="btn link-btn">
-          <a style="text-decoration: none" href="#">
-            <div style="display: flex; width: 220px">
-              <div>
-                <img src="Assets\Link 100.png" alt="" />
-              </div>
-
-              <span style="padding-left: 6%; padding-top: 0.5%; color: black"
-                >100% Authentic Products</span
-              >
-            </div>
-          </a>
-        </button>
-
-        <!-- Link6 -->
-        <button class="btn link-btn6">
-          <a style="text-decoration: none" href="#">
-            <div style="display: flex; width: 140px">
-              <div>
-                <img src="Assets\Links Daraz.png" alt="" />
-              </div>
-
-              <span style="padding-left: 6%; padding-top: 0.5%; color: black"
-                >Daraz Verified</span
-              >
-            </div>
-          </a>
-        </button>
+          </div>
       </div>
     </div>
+  </div>
 
-    <div
-      class="col-md-4 container flash-photo-container"
-    >
+    
       <div class="flash-photo">
         <img src="Assets\background_removal-removebg-preview.png" alt="" />
       </div>
-    </div>
+    
 
     <h3 style="margin-left: 10%; color: #424242;font-size: 22px;">Categories</h3>
 
@@ -935,6 +1026,7 @@
         </div>
       </div>
     </div>
+    
 
     <h3
       style="margin-left: 10%; margin-top: 2%; font-size: 22px; color: #757575"
@@ -950,10 +1042,18 @@
             On Sale Now
           </p>
           <p style="padding: 2% 0; font-size: 14px">Ending in</p>
-          <div style="padding-top: 1.7%; margin-left: auto; padding-right: 2%">
+          <div class="d-flex" style="padding-left: 1%;">
+          <div  style="background-color: #ff6801;margin-top: 12%;width: 40px;height: 40px;padding: 7% 8%;">00</div>
+          <div  style="margin-left: 2%;color: #ff6801;margin-top: 16%;"> : </div>
+          <div  style="margin-left: 2%;background-color: #ff6801;margin-top: 12%;width: 40px;height: 40px;padding: 7% 8%;">00</div>
+          <div class="semicolon"  > : </div>
+          <div class="seconds" >00</div>
+        </div>
+
+          <div style="padding-top: 1.7%; margin-left: auto; padding-right: 1%">
             <button
               class="btn"
-              style="color: #f85656; border: 1px solid #f85656"
+              style="color: #f85656; border: 1px solid #f85656;width: 104px;"
             >
               Shop More
             </button>
@@ -1309,7 +1409,7 @@
         </div>
       </div>
 
-      <div class="col-sm-12 col-md-6 col-lg-4 d-flex">
+      <div class="col-sm-12 col-md-6 col-lg-4 d-flex ">
         <!-- Item3 -->
         <div class="grid-item" style="padding-left: 1%;background-color: white; width: 55%">
           <div style="width: 100%">
@@ -1393,7 +1493,7 @@
         </div>
       </div>
 
-      <div class="col-sm-12 col-md-6 col-lg-4 d-flex">
+      <div class="col-sm-12 col-md-6 col-lg-4 d-flex ">
         <!-- Item5 -->
         <div class="grid-item" style="background-color: white; width: 55%">
           <div style="width: 100%">
@@ -1480,7 +1580,7 @@
   </div>
 
     <!-- Just For You2 -->
-    <div class="row d-flex" style="margin-top: 3%;width: 100%;padding-left: 10%;padding-right: 8%;">
+    <div class="row d-flex just-for-you-2" style="margin-top: 3%;width: 100%;padding-left: 10%;padding-right: 8%;">
       <div class="col-sm-12 col-md-6 col-lg-4 d-flex">
         <!-- Item1 -->
         <div class="grid-item" style="width: 55%;background-color: white;">
@@ -1735,7 +1835,7 @@
     </div>
 
     <!-- Just For You3 -->
-    <div class="row d-flex" style="margin-top: 3%;width: 100%;padding-left: 10%;padding-right: 8%;">
+    <div class="row d-flex just-for-you-2" style="margin-top: 3%;width: 100%;padding-left: 10%;padding-right: 8%;">
       <div class="col-sm-12 col-md-6 col-lg-4 d-flex">
         <!-- Item1 -->
         <div class="grid-item" style="width: 55%;background-color: white;">
@@ -1990,7 +2090,7 @@
     </div>
 
     <!-- Just For You4 -->
-    <div class="row d-flex" style="margin-top: 3%;width: 100%;padding-left: 10%;padding-right: 8%;">
+    <div class="row d-flex just-for-you-2" style="margin-top: 3%;width: 100%;padding-left: 10%;padding-right: 8%;">
       <div class="col-sm-12 col-md-6 col-lg-4 d-flex">
         <!-- Item1 -->
         <div class="grid-item" style="width: 55%;background-color: white;">
@@ -2252,9 +2352,9 @@
     </div>
 
     <!-- Daraz Basic Info -->
-    <div class="row container-fluid" >
+    <div class="row container-fluid" style="padding-left: 4.5%;padding-right: 4.5%;" >
       <div class="col-sm-6  col-lg-3 basic-info1">
-        <h3 style="color: #f85656; font-size: 20px">Customer Care</h3>
+        <h3 style="padding-bottom: 5%; color: #f85656; font-size: 20px">Customer Care</h3>
         <a href="#">Help Center</a>
         <a href="#">How to Buy</a>
         <a href="#">Corporate & Bulk Purchasing</a>
@@ -2279,7 +2379,7 @@
       </div>
 
       <div class="col-sm-6  col-lg-3 basic-info2">
-        <h3 style="color: #f85656; font-size: 20px">Daraz</h3>
+        <h3 style="padding-bottom: 5%; color: #f85656; font-size: 20px">Daraz</h3>
         <a href="#">About Us</a>
         <a href="#">Digital Payment</a>
         <a href="#">Daraz Donates</a>
@@ -2294,7 +2394,7 @@
       </div>
 
       <div class="col-sm-6  col-lg-3 basic-info3">
-        <h3 style="color: #f85656; font-size: 20px">Daraz International</h3>
+        <h3 style="padding-bottom: 5%; color: #f85656; font-size: 20px">Daraz International</h3>
         <div class="d-flex">
           <div class="d-flex">
             <span
@@ -2391,44 +2491,43 @@
       </div>
 
       <div class="col-sm-6 col-lg-3 basic-info4" >
-        <h3 style="color: #f85656; font-size: 20px">
+        <h3 style="padding-bottom: 5%; color: #f85656; font-size: 20px">
           Exclusive Deals and Offer!
         </h3>
         <div class="d-flex">
-          <div style="width: 25%; height: 40%">
+          <div style="width: 85px; height: 85px">
             <img width="100%" src="Assets\deal1.png" alt="" />
           </div>
-          <div style="border: 1px solid black">
+
+          <div  style="padding-left: 5%; display: flex;flex-direction: column;">
             <span
               class="basic-info3-link link-deal-2"
-              style="border: 1px solid black; width: 400px; height: 90px"
+              style=" width: 300px; height: 85px"
             ></span>
             <span
-              style="width: 100px; height: 100px"
+              style="width: 300px; height: 85px"
               class="basic-info3-link link-deal-3"
             ></span>
             <span
-              style="width: 100px; height: 100px"
+              style="width: 300px; height: 85px"
               class="basic-info3-link link-deal-4"
             ></span>
           </div>
         </div>
-        <div class="d-flex">
-          <div>
-            <span
-              style="width: 100px; height: 100px"
-              class="basic-info3-link link-deal-5"
-            ></span>
+
+        <div style="display: flex;padding-top: 15%;">
+          <span class="basic-info3-link link-deal-5" style="height: 125px; width: 125px;">
+          </span>
+          <div style="display: flex; flex-direction: column; margin-left: 10px;">
+              <span class="basic-info3-link link-deal-6"
+                  style=" height: 80px; width: 400px;;"></span>
+              <p style="font-size: 12px; margin-left: 5px;">Downlaod App</p>
           </div>
-          <div>
-            <span
-              style="width: 100px; height: 100px"
-              class="basic-info3-link link-deal-6"
-            ></span>
-            <p style="font-size: 10px">Download App</p>
-          </div>
+
         </div>
-        <h3 style="color: #f85656; font-size: 20px">Follow Us</h3>
+
+
+        <h3 style="color: #f85656; font-size: 20px;padding-top: 5%;">Follow Us</h3>
         <div class="d-flex">
           <span
             style="width: 100px; height: 90px"
@@ -2455,7 +2554,7 @@
     </div>
 
     <!-- Daraz Detailed Info -->
-    <div class="row container-fluid" style="background-color: #F1F1F1; margin-top: 2%">
+    <div class="row container-fluid" style="background-color: #F1F1F1; margin-top: 2%;padding-left: 5.5%;padding-right: 4.5%;">
       <div class="col-sm-6 col-lg-3 detailed-info1">
         <h1 >How Daraz Transformed Online Shopping in Pakistan</h1>
         <p>
@@ -2676,7 +2775,7 @@
         <h2 style="margin-top: 4%;">
           <a
             href="#"
-            style="font-size: 12px; text-decoration: none; color: #333"
+            style=" font-size: 12px; text-decoration: none; color: #333"
             >WOMENS'S FASION</a
           >
         </h2>
